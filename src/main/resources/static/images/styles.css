@@ -5,7 +5,7 @@ div.ingredient-group:nth-child(odd) {
 
 div.ingredient-group:nth-child(even) {
     float: left;
-	padding-right: 0;
+	padding-right:10;
 }
 
 div.ingredient-group {
