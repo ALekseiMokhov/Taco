@@ -1,9 +1,11 @@
 package com.example.Taco.data;
 
 import com.example.Taco.Order;
+import org.springframework.data.repository.CrudRepository;
 
-public interface OrderRepository {
+import java.util.List;
 
-    Order save(Order order);
+public interface OrderRepository extends CrudRepository<Order,Long> {
+    List<Order> findByDeliveryZip(String deliveryZip);
 
 }
